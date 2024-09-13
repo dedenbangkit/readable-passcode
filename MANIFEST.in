@@ -20,3 +20,4 @@ global-exclude __pycache__
 global-exclude *.py[cod]
 
 include *.yml
+include .coveragerc

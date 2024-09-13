@@ -5,7 +5,7 @@ A human-readable passcode generator that creates secure, easy-to-remember passco
 
 You can install the package via PyPI using pip.
 
-1. Install via PyPI
+### 1. Install via PyPI
 
 Run the following command to install the package:
 
@@ -13,7 +13,7 @@ Run the following command to install the package:
 pip install readable-passcode
 ```
 
-2. Install from Source
+### 2. Install from Source
 
 Alternatively, you can install the package from the source code. First, clone the repository:
 
@@ -25,7 +25,7 @@ pip install .
 
 ## Example Usage
 
-1. Using the Python API
+### 1. Using the Python API
 
 You can use the passcode_generator function directly in your Python code to generate human-readable passcodes. Customize the number of words, the length of the random number, and whether or not to include a special character.
 
@@ -44,7 +44,7 @@ print(passcode)  # Example output: 'apple-tree-cloud-123456'
 passcode = passcode_generator(word=2, number=4, special_char=True)
 print(passcode)  # Example output: 'apple-tree-1234$'
 ```
-2. Using the Command Line Interface (CLI)
+### 2. Using the Command Line Interface (CLI)
 
 You can also generate passcodes directly from the command line. The CLI provides options to specify the number of words, number length, and whether to include a special character.
 
@@ -74,18 +74,10 @@ apple-tree-1234$
 
 ## Key Features
 
-- *Efficient Word Retrieval*: Optimized for performance, allowing you to retrieve random words without needing to load the entire word list into memory, which is particularly useful for large datasets.
-
-- *Command Line Interface (CLI) Support*: Easily generate passcodes or retrieve random words directly from your terminal using simple CLI commands, making it convenient for quick use cases.
-
-- *Lightweight Package*: With a small package size, it ensures minimal overhead and fast installation times, making it suitable for resource-constrained environments or quick setups.
-
-- *Customizable Passcode Generation*: Supports generating human-readable passcodes with customizable options like word count, number length, and inclusion of special characters.
-
-- *Cross-Platform Compatibility*: Works seamlessly across different operating systems, including Linux, macOS, and Windows, whether used as a CLI tool or a Python package.
-
-- *Extensible*: Easy to integrate with other Python applications, making it a flexible tool for developers needing word-based randomization.
-
-- *High Performance*: Designed for both speed and memory efficiency, ensuring smooth performance even with high word retrieval frequencies or large-scale operations.
-
-- *Supports Multiple Python Versions*: Compatible with multiple Python versions, including Python 3.8, 3.9, and 3.10, ensuring flexibility across different development environments.
+- **Efficient Word Retrieval**: Optimized for performance, allowing you to retrieve random words without needing to load the entire word list into memory, which is particularly useful for large datasets.
+- **Command Line Interface (CLI) Support**: Easily generate passcodes or retrieve random words directly from your terminal using simple CLI commands, making it convenient for quick use cases.
+- **Lightweight Package**: With a small package size, it ensures minimal overhead and fast installation times, making it suitable for resource-constrained environments or quick setups.
+- **Customizable Passcode Generation**: Supports generating human-readable passcodes with customizable options like word count, number length, and inclusion of special characters.
+- **Cross-Platform Compatibility**: Works seamlessly across different operating systems, including Linux, macOS, and Windows, whether used as a CLI tool or a Python package.
+- **Extensible**: Easy to integrate with other Python applications, making it a flexible tool for developers needing word-based randomization.
+- **High Performance**: Designed for both speed and memory efficiency, ensuring smooth performance even with high word retrieval frequencies or large-scale operations.

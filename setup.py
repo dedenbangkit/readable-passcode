@@ -1,8 +1,5 @@
 from setuptools import setup, find_packages
 
-with open("README.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
-
 setup(
     name="readable_passcode",
     version="1.0.0",
@@ -13,12 +10,13 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
-        "Programming Language :: Python :: 3.8 :: Only",
+        "Programming Language :: Python :: 3 :: Only",
         "License :: OSI Approved :: GNU Affero General Public License v3",
+        "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
     description="Generate human-readable passcodes with memory optimization",
-    long_description=long_description,
+    long_description=open("README.md", "r", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     project_urls={
         "Documentation": "https://github.com/dedenbangkit/readable-passcode",
@@ -41,10 +39,5 @@ setup(
     extras_require={
         "dev": ["check-manifest"],
     },
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-    ],
     python_requires=">=3.8",
 )

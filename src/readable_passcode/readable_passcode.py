@@ -69,7 +69,7 @@ def passcode_generator(word=3, number=0, special_char=False):
     passcode = "-".join(passcode_words)
     if number:
         str_number = "".join(
-            [random.choices(string.digits) for n in enumerate(number)]
+            random.choice(string.digits) for _ in range(number)
         )
         passcode += f"-{str_number}"
     if special_char:

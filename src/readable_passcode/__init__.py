@@ -1,4 +1,4 @@
-from .readable_passcode import generate_passcode
+from .readable_passcode import passcode_generator
 
 __version__ = "0.0.1"
-__all__ = ["generate_passcode"]
+__all__ = ["passcode_generator"]

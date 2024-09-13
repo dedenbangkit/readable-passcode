@@ -33,10 +33,3 @@ jobs:
 
       - name: Run tox
         run: tox
-
-      - name: Upload test results
-        if: always()
-        uses: actions/upload-artifact@v3
-        with:
-          name: tox-result-${{ matrix.python-version }}
-          path: .tox/

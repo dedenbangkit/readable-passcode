@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="readable_passcode",
-    version="1.0.0",
+    version="1.0.1",
     author="Deden",
     author_email="mail@dedenbangkit.com",
     classifiers=[
@@ -33,7 +33,7 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "readable-passcode=readable_passcode.readable_passcode:main",
+            "readable-passcode=readable_passcode.readable_passcode:cli",
         ],
     },
     extras_require={
